@@ -8,9 +8,9 @@ body {
     height: 100vh;
     background: linear-gradient(
         to bottom,
-        #429488 0%,
-        #429488 200px,
-        #DBDBD3 200px,
-        #DBDBD3 100%
+        #009688 0%,
+        #009688 200px,
+        #DCDBD3 200px,
+        #DCDBD3 100%
     );
 }
