@@ -14,3 +14,13 @@ body {
         #DCDBD3 100%
     );
 }
+
+.container {
+    margin: 40px auto;
+    height: calc(100vh - 80px);
+    max-width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
