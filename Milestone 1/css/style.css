@@ -21,6 +21,27 @@ body {
     max-width: 80%;
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.contatti {
+    height: 100%;
+    width: 35%;
+    background-color: greenyellow;
+    align-items: flex-start;
+}
+
+
+.chat {
+    height: 100%;
+    width: 65%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: right;
+}
+
+.chat .top {
+    height: 90px;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: flex-start;
 }
