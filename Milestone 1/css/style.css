@@ -26,7 +26,7 @@ body {
 .contatti {
     height: 100%;
     width: 35%;
-    background-color: greenyellow;
+    background-color: white;
     align-items: flex-start;
 }
 
@@ -35,12 +35,15 @@ body {
     height: 100%;
     width: 65%;
     background-color: aliceblue;
+    background-image: url(../../img/mine.jpg);
     display: flex;
     justify-content: right;
+    border-left: 1px solid #DDDDDD;
 }
 
-.chat .top {
+.top {
     height: 90px;
+    width: 100%;
     background-color: #EAEAEA;
     display: flex;
     align-items: flex-start;
