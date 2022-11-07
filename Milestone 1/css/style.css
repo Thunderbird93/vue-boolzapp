@@ -9,10 +9,26 @@ body {
     background: linear-gradient(
         to bottom,
         #009688 0%,
-        #009688 200px,
-        #DCDBD3 200px,
+        #009688 150px,
+        #DCDBD3 150px,
         #DCDBD3 100%
     );
+    overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+    border: 1px solid white;
+    border-radius: 90%;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+}
+
+.top, .avviso, .search {
+    padding: 5px;
 }
 
 .container {
@@ -48,3 +64,38 @@ body {
     display: flex;
     align-items: flex-start;
 }
+
+.avviso {
+    height: 100px;
+    width: 100%;
+    background-color: #8EDAFC;
+    display: flex;
+    align-items: flex-start;
+}
+
+.search {
+    height: 60px;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.wall {
+    height: calc(100% - 250px);
+    width: 100%;
+    overflow: auto;
+}
+
+.wall .user {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #F9F9F9;
+    /* debug */
+    background-color: yellowgreen;
+}
+
+.foto {
+    height: 90px;
+    width: 90px;
+}
+
