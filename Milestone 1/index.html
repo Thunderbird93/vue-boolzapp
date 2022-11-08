@@ -37,11 +37,11 @@
                         v-for="(contact, index) in contacts"
                         class="user">
                             <div class="foto">
-                                <img src="../img/avatar_1.jpg" alt="">
+                                <img :src="'../img/avatar' + contact.avatar + '.jpg'" alt="">
                             </div>
                             <div class="info">
                                 <div class="nome-utente">{{contact.name}}</div>
-                                <div class="last-msg">Ciao!</div>
+                                <div class="last-msg">{{workInProgress}}</div>
                             </div>
                             <div class="orario">12:00</div>
                         </li>

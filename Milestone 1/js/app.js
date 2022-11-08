@@ -173,11 +173,12 @@ createApp({
             ],
             chatOpened: 0,
             myName: 'Cristian',
-            myPhoto: '../img/avatar_io.jpg',
         };
     },
 
     methods: {
-
+        lastMessage(){
+            return this.contact.messages.message.slice(-1)[0]
+        }
     }
 }).mount('#app')
