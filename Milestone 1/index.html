@@ -18,10 +18,10 @@
             <div class="contatti">
                 <div class="top">
                     <div class="foto">
-                        <img src="../img/avatar_io.jpg" alt="">
+                        <img :src="myPhoto" alt="">
                     </div>
                     <div class="info">
-                        <div class="nome-utente">Nome</div>
+                        <div class="nome-utente">{{myName}}</div>
                     </div>
                     <div class="icons">
                         <i class="fa-solid fa-circle-notch"></i>
@@ -33,29 +33,11 @@
                 <div class="search"></div>
                 <div class="wall">
                     <ul>
-                        <li class="user">
+                        <li 
+                        v-for="(contact, index) in contacts"
+                        class="user">
                             <div class="foto">
                                 <img src="../img/avatar_1.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="nome-utente">Nome</div>
-                                <div class="last-msg">Ciao!</div>
-                            </div>
-                            <div class="orario">12:00</div>
-                        </li>
-                        <li class="user">
-                            <div class="foto">
-                                <img src="../img/avatar_2.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <div class="nome-utente">Nome</div>
-                                <div class="last-msg">Ciao!</div>
-                            </div>
-                            <div class="orario">12:00</div>
-                        </li>
-                        <li class="user">
-                            <div class="foto">
-                                <img src="../img/avatar_3.jpg" alt="">
                             </div>
                             <div class="info">
                                 <div class="nome-utente">Nome</div>
@@ -81,29 +63,13 @@
                         <div class="messaggio-d">Ciao</div>
                     </div>
                     <div class="ai-msg">Hi!</div>
-                    <div class="user-msg">
-                        <div class="messaggio-d">Ciao</div>
-                    </div>
-                    <div class="ai-msg">Hi!</div>
-                    <div class="user-msg">
-                        <div class="messaggio-d">Ciao</div>
-                    </div>
-                    <div class="ai-msg">Hi!</div>
-                    <div class="user-msg">
-                        <div class="messaggio-d">Ciao</div>
-                    </div>
-                    <div class="ai-msg">Hi!</div>
-                    <div class="user-msg">
-                        <div class="messaggio-d">Ciao</div>
-                    </div>
-                    <div class="ai-msg">Hi!</div>
                 </div>
                 <div class="bottom">
                     <div class="emoji">
                         <i class="fa-regular fa-face-smile"></i>
                     </div>
                     <div class="text-input">
-                        <input type="text" value="Scrivi un messaggio">
+                        <input type="text" placeholder="Scrivi un messaggio">
                     </div>
                     <div class="mic">
                         <i class="fa-solid fa-microphone"></i>

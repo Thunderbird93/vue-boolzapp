@@ -172,6 +172,8 @@ createApp({
                 },
             ],
             chatOpened: 0,
+            myName: 'Cristian',
+            myPhoto: '../img/avatar_io.jpg',
         };
     },
 
