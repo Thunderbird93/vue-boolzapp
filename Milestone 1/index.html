@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src=https://unpkg.com/vue@3></script>
     <title>Vue Boolzapp</title>
@@ -15,7 +16,19 @@
     <div id="app">
         <div class="container">
             <div class="contatti">
-                <div class="top"></div>
+                <div class="top">
+                    <div class="foto">
+                        <img src="../img/avatar_io.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="nome-utente">Nome</div>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
                 <div class="avviso"></div>
                 <div class="search"></div>
                 <div class="wall">
@@ -25,16 +38,77 @@
                                 <img src="../img/avatar_1.jpg" alt="">
                             </div>
                             <div class="info">
-                                <div class="nome-utente">"Nome"</div>
-                                <div class="last-msg">"Ciao!"</div>
+                                <div class="nome-utente">Nome</div>
+                                <div class="last-msg">Ciao!</div>
                             </div>
-                            <div class="orario"></div>
+                            <div class="orario">12:00</div>
+                        </li>
+                        <li class="user">
+                            <div class="foto">
+                                <img src="../img/avatar_2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="nome-utente">Nome</div>
+                                <div class="last-msg">Ciao!</div>
+                            </div>
+                            <div class="orario">12:00</div>
+                        </li>
+                        <li class="user">
+                            <div class="foto">
+                                <img src="../img/avatar_3.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="nome-utente">Nome</div>
+                                <div class="last-msg">Ciao!</div>
+                            </div>
+                            <div class="orario">12:00</div>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="chat">
-                <div class="top"></div>
+                <div class="top">
+                    <div class="foto">
+                        <img src="../img/avatar_1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="nome-utente">Nome</div>
+                        <div>Ultimo accesso oggi alle 07:00</div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="user-msg">
+                        <div class="messaggio-d">Ciao</div>
+                    </div>
+                    <div class="ai-msg">Hi!</div>
+                    <div class="user-msg">
+                        <div class="messaggio-d">Ciao</div>
+                    </div>
+                    <div class="ai-msg">Hi!</div>
+                    <div class="user-msg">
+                        <div class="messaggio-d">Ciao</div>
+                    </div>
+                    <div class="ai-msg">Hi!</div>
+                    <div class="user-msg">
+                        <div class="messaggio-d">Ciao</div>
+                    </div>
+                    <div class="ai-msg">Hi!</div>
+                    <div class="user-msg">
+                        <div class="messaggio-d">Ciao</div>
+                    </div>
+                    <div class="ai-msg">Hi!</div>
+                </div>
+                <div class="bottom">
+                    <div class="emoji">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <div class="text-input">
+                        <input type="Scrivi un messaggio">
+                    </div>
+                    <div class="mic">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

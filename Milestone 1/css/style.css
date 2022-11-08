@@ -17,9 +17,13 @@ body {
     overflow-y: hidden;
 }
 
+input {
+    width: 100%;
+}
+
 img {
-    max-width: 100%;
-    border: 1px solid white;
+    width: 100%;
+    max-width: 50px;
     border-radius: 90%;
 }
 
@@ -28,7 +32,7 @@ li {
     padding: 5px;
 }
 
-.top, .avviso, .search {
+.top, .avviso, .search, .info {
     padding: 5px;
 }
 
@@ -51,24 +55,37 @@ li {
 
 .chat {
     height: 100%;
+    min-width: 350px;
     width: 65%;
     background-color: aliceblue;
     background-image: url(../../img/mine.jpg);
-    display: flex;
-    justify-content: right;
     border-left: 1px solid #DDDDDD;
 }
 
 .top {
-    height: 90px;
+    height: 70px;
     width: 100%;
     background-color: #EAEAEA;
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom {
+    height: 70px;
+    width: 100%;
+    background-color: #F2EDE9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.msg {
+    height: calc(100% - 140px);
 }
 
 .avviso {
-    height: 100px;
+    height: 70px;
     width: 100%;
     background-color: #8EDAFC;
     display: flex;
@@ -90,21 +107,60 @@ li {
 .wall .user {
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 70px;
     width: 100%;
     background-color: white;
     border: 1px solid #F9F9F9;
-    /* debug */
-    background-color: yellowgreen;
+    
 }
 
 .foto {
-    height: 90px;
-    width: 90px;
+    width: 70px;
 }
 
 .orario {
     width: 60px;
     height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.info {
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+}
+
+.text-input {
+    width: 80%;
+}
+
+.msg{
+    overflow: auto;
+    padding: 10px 10%;
+}
+
+.user-msg, .ai-msg{
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+}
+
+.msg .user-msg{
+    background-color: #009688;
+    display: flex;
+    justify-content: end;
+}
+
+.msg .ai-msg{
     background-color: #8EDAFC;
+    display: flex;
+    justify-content: start;
+
 }
