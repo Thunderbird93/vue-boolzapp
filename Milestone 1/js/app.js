@@ -177,6 +177,7 @@ createApp({
         };
     },
 
+    
     methods: {
         lastMessage(){
             return this.contact.messages.message.slice(-1)[0]
