@@ -188,6 +188,14 @@ const app = createApp({
                 status: "sent",
             });
             this.link = '';
+            setTimeout(this.rispostaMessaggio, 3000);
+        },
+
+        rispostaMessaggio(){
+            this.contacts[this.iChat].messages.push({
+                message: "Ok!",
+                status: "received",
+            });
         }
     }
 }).mount('#app')
