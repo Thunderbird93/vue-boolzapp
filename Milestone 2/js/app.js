@@ -1,6 +1,6 @@
 const {createApp} = Vue;
 
-createApp({
+const app = createApp({
     data(){
         return{
             contacts: [
@@ -179,8 +179,5 @@ createApp({
 
     
     methods: {
-        lastMessage(){
-            return this.contact.messages.message.slice(-1)[0]
-        }
     }
 }).mount('#app')
