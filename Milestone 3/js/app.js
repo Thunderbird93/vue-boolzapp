@@ -199,3 +199,11 @@ const app = createApp({
         }
     }
 }).mount('#app')
+
+
+/*
+Ricerca utenti:
+per ogni lettera inserita nell'input ricerca
+utente (keyup) ricerco tutti i nomi che hanno 
+quella lettera/e
+*/
