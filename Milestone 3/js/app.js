@@ -187,6 +187,7 @@ const app = createApp({
                 message: this.link,
                 status: "sent",
             });
+            this.link = '';
         }
     }
 }).mount('#app')
