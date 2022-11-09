@@ -21,7 +21,9 @@
                         <img :src="myPhoto" alt="">
                     </div>
                     <div class="info">
-                        <div class="nome-utente">{{myName}}</div>
+                        <div class="nome-utente">
+                        {{myName}}
+                        </div>
                     </div>
                     <div class="icons">
                         <i class="fa-solid fa-circle-notch"></i>
@@ -40,7 +42,9 @@
                                 <img :src="'../img/avatar' + contact.avatar + '.jpg'" alt="">
                             </div>
                             <div class="info">
-                                <div class="nome-utente">{{contact.name}}</div>
+                                <div class="nome-utente">
+                                {{contact.name}}
+                                </div>
                                 <div class="last-msg"></div>
                             </div>
                             <div class="orario">12:00</div>
@@ -72,7 +76,9 @@
                     <div v-for="msg in contacts[chatOpened].messages">
                         <p
                         v-if="msg.status === 'received'"
-                        class="ai-msg">{{msg.message}}</p>
+                        class="ai-msg">
+                        {{msg.message}}
+                        </p>
                     </div>
                 </div>
                 <div class="bottom">
@@ -80,8 +86,8 @@
                         <i class="fa-regular fa-face-smile"></i>
                     </div>
                     <div class="text-input">
-                        <input 
-                        @keyup.enter="funzioneEnter()"
+                        <input
+                        @keyup.enter="" 
                         v-model="link"
                         type="text" placeholder="Scrivi un messaggio">
                     </div>

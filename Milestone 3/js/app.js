@@ -175,14 +175,13 @@ const app = createApp({
             myName: 'Cristian',
             myPhoto: '../img/avatar_io.jpg',
             link: '',
+            iChat: 0,
         };
     },
 
     
     methods: {
-        funzioneEnter(){
-            console.log(this.link);
-        }
+        
     }
 }).mount('#app')
 
