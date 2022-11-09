@@ -32,7 +32,12 @@
                     </div>
                 </div>
                 <div class="avviso"></div>
-                <div class="search"></div>
+                <div class="search">
+                    <input
+                    v-model.trim="cerca"
+                    @keyup="cercaUtente()"
+                    placeholder="Cerca un tuo amico" type="text">
+                </div>
                 <div class="wall">
                     <ul>
                         <li 

@@ -196,6 +196,10 @@ const app = createApp({
                 message: "Ok!",
                 status: "received",
             });
+        },
+
+        cercaUtente(){
+            
         }
     }
 }).mount('#app')
