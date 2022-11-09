@@ -199,11 +199,3 @@ const app = createApp({
         }
     }
 }).mount('#app')
-
-/*
-- Aggiunta di un messaggio.
-    premento "enter" si invia il messaggio e se ne crea uno
-
-- Risposta dall'interlocutore.
-    dopo ogni inserimento di messaggio l'AI risponde con un "ok" con 1 secondo di attesa
- */
