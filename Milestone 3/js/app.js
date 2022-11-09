@@ -174,10 +174,22 @@ const app = createApp({
             chatOpened: 0,
             myName: 'Cristian',
             myPhoto: '../img/avatar_io.jpg',
+            link: '',
         };
     },
 
     
     methods: {
+        funzioneEnter(){
+            console.log(this.link);
+        }
     }
 }).mount('#app')
+
+/*
+- Aggiunta di un messaggio.
+    premento "enter" si invia il messaggio e se ne crea uno
+
+- Risposta dall'interlocutore.
+    dopo ogni inserimento di messaggio l'AI risponde con un "ok" con 1 secondo di attesa
+ */
