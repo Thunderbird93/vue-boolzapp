@@ -181,7 +181,13 @@ const app = createApp({
 
     
     methods: {
-        
+        nuovoMessaggio(){
+            this.iChat = this.chatOpened;
+            this.contacts[this.iChat].messages.push({
+                message: this.link,
+                status: "sent",
+            });
+        }
     }
 }).mount('#app')
 
