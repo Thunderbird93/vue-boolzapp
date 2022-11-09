@@ -59,11 +59,14 @@
                     </div>
                 </div>
                 <div class="msg">
-                    <div class="user-msg" v-for="msg in contacts[chatOpened].messages">
-                        <div 
+                    <div class="user-msg"
+                        v-for="msg in contacts[chatOpened].messages">
+                        <div
+                        v-if="msg.status === 'sent'"  
                         class="messaggio-d">
-                        <p 
-                        v-if="msg.status === 'sent'">{{ msg.message }}</p>
+                        <p>
+                        {{ msg.message }}
+                        </p>
                         </div>
                     </div>
                     <div v-for="msg in contacts[chatOpened].messages">
