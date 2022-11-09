@@ -81,6 +81,7 @@
                     </div>
                     <div class="text-input">
                         <input 
+                        @keyup.enter="funzioneEnter()"
                         v-model="link"
                         type="text" placeholder="Scrivi un messaggio">
                     </div>
