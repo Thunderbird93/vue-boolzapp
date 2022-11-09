@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src=https://unpkg.com/vue@3></script>
+    <title>Vue Boolzapp</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="contatti">
+                <div class="top">
+                    <div class="foto">
+                        <img :src="myPhoto" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="nome-utente">{{myName}}</div>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="avviso"></div>
+                <div class="search"></div>
+                <div class="wall">
+                    <ul>
+                        <li 
+                        v-for="(contact, index) in contacts"
+                        class="user">
+                            <div class="foto">
+                                <img :src="'../img/avatar' + contact.avatar + '.jpg'" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="nome-utente">{{contact.name}}</div>
+                                <div class="last-msg">{{workInProgress}}</div>
+                            </div>
+                            <div class="orario">12:00</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="top">
+                    <div class="foto">
+                        <img src="../img/avatar_1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="nome-utente">-</div>
+                        <div>-</div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="user-msg">
+                        <div class="messaggio-d">Ciao</div>
+                    </div>
+                    <div class="ai-msg">Hi!</div>
+                </div>
+                <div class="bottom">
+                    <div class="emoji">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <div class="text-input">
+                        <input type="text" placeholder="Scrivi un messaggio">
+                    </div>
+                    <div class="mic">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
